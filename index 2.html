@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHEIN $750 Gift Card</title>
+  <meta name="description" content="Claim your $750 SHEIN Gift Card by completing quick deals. Available for USA, UK, Canada, and Australia.">
+  <meta name="keywords" content="SHEIN gift card, $750 offer, free shopping rewards, SHEIN deals">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(to bottom right, #007BFF, #66B2FF);
+      color: #fff;
+    }
+    header {
+      background: black;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    p {
+      font-size: 1rem;
+      margin: 8px 0;
+    }
+    .card {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      margin: 15px auto;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    }
+    .btn {
+      display: block;
+      width: 80%;
+      max-width: 400px;
+      margin: 15px auto;
+      padding: 15px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+    }
+    .btn-black {
+      background: black;
+      color: white;
+    }
+    .btn-black:hover {
+      background: #333;
+    }
+    .btn-white {
+      background: white;
+      color: black;
+      border: 2px solid black;
+    }
+    .btn-white:hover {
+      background: #f2f2f2;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
+    }
+
+    #loader {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+    .spinner {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #007BFF;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    .loader-text {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>🎁 SHEIN $750 Gift Card 🎁</header>
+
+  <div class="card">
+    <p>1. Select your country & sign up</p>
+    <p>2. Complete 4–5 quick deals to become eligible</p>
+    <p>3. Claim your SHEIN $750 Gift Card once you are done!</p>
+  </div>
+
+  <div class="card">
+    <p>Please select your country before proceeding</p>
+    <button class="btn btn-black" onclick="redirectWithLoader('https://uplevelrewarded.com/aff_c?offer_id=1229&aff_id=75211&source=Zeus')">🇺🇸 Get Your Gift Card (USA, UK, Canada)</button>
+    <button class="btn btn-white" onclick="redirectWithLoader('https://uplevelrewarded.com/aff_c?offer_id=1229&aff_id=75211&source=Zeus')">🇦🇺 Get Your Gift Card (Australia)</button>
+  </div>
+
+  <div id="loader">
+    <div class="spinner"></div>
+    <div class="loader-text">Processing your request...</div>
+  </div>
+
+  <script>
+    function redirectWithLoader(url) {
+      document.getElementById("loader").style.display = "flex";
+      setTimeout(() => {
+        window.location.href = url;
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
